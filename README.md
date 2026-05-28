@@ -1,6 +1,10 @@
 # Priority
 
-A personal productivity app built with Flutter + Firebase. Three views — Notes, Eisenhower Matrix, Goals — with real-time sync, Google Sign-In, and TOTP 2-factor authentication.
+A personal productivity app built with Flutter + Firebase. Three views — Notes, Eisenhower Matrix, Goals — with real-time sync and Google Sign-In.
+
+**Firebase project:** `priority-d553f` | **Web URL:** https://priority-d553f.web.app
+
+> Full command reference: [COMMANDS.md](COMMANDS.md) | Known issues & roadmap: [TODO.md](TODO.md)
 
 ## Features
 
@@ -31,7 +35,7 @@ A personal productivity app built with Flutter + Firebase. Three views — Notes
 
 ### Security
 - Google Sign-In via Firebase Authentication
-- TOTP 2-factor authentication (Google Authenticator, Authy)
+- TOTP 2-factor authentication — code is ready, requires Firebase Blaze plan upgrade to activate (see [TODO.md](TODO.md))
 - Firestore security rules: users can only access their own data
 - All data encrypted in transit (HTTPS) and at rest (Firebase)
 
@@ -54,7 +58,18 @@ A personal productivity app built with Flutter + Firebase. Three views — Notes
 
 ---
 
-## Getting Started
+## Quick Start (already set up)
+
+```powershell
+cd "C:\Users\ssharma\Downloads\p_repo\priority"
+C:\Users\ssharma\flutter\bin\flutter.bat run -d chrome --web-browser-flag "--user-data-dir=C:\Users\ssharma\flutter-chrome-profile"
+```
+
+Or double-click **`run_web.bat`**. See [COMMANDS.md](COMMANDS.md) for all commands.
+
+---
+
+## Getting Started (fresh machine setup)
 
 ### Prerequisites
 
